@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPS-AUTO</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="container mx-auto px-5">
+        <div class="row d-flex text-center my-4">
+            <h2>SGPS-AUTO</h2>
+        </div>
+        <div class="row py-2">
+            <span id="welcome_msg">Welcome, </span>
+        </div>
+        <div class="row" id="config-container">
+            <!-- <div class="col-4 btn-group-vertical btn-group-lg">
+                <input type="radio" class="btn-check" name="configbtns" id="configbtn1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary d-flex justify-content-center align-items-lg-center" for="configbtn1">Start</label>
+
+                <input type="radio" class="btn-check" name="configbtns" id="configbtn2" autocomplete="off">
+                <label class="btn btn-outline-dark d-flex justify-content-center align-items-lg-center" for="configbtn2">Config</label>
+
+                <input type="radio" class="btn-check" name="configbtns" id="configbtn3" autocomplete="off">
+                <label class="btn btn-outline-warning d-flex justify-content-center align-items-lg-center" for="configbtn3">Misc</label>
+            </div> -->
+            <div class="col-6 px-5 d-flex" id="default-config-container">
+                <form class="container needs-validation" novalidate>
+                    <div class="row mb-3">
+                        <h3>Configuration</h3>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="us_id_input" class="form-label">User Story Identifier</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="us_id_label">HU</span>
+                            <input type="text" class="form-control" pattern="[0-9]{6}" maxlength="6" placeholder="XXXXXX" aria-label="User Story" aria-describedby="basic-us_id_label" id="us_id_input" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please provide a valid US number (min 6 digits, numbers only).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="us_points_select" class="form-label">Points</label>
+                        <div class="input-group">
+                            <select name="us_points_select" class="form-select" id="us_points_select" title="yomama" required>
+                                <option value="" selected>Select Option</option>
+                                <option value="01">2pts</option>
+                                <option value="02">3pts</option>
+                                <option value="03">5pts</option>
+                                <option value="04">8pts</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please select a valid option.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="us_startdate_input" class="form-label">Start Date</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="us_startdate_input" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please select a valid date (current month only).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="checkbox" id="flexSwitchCheckDefault" data-bs-toggle="collapse" data-bs-target="#advanced-config-container" aria-expanded="false" aria-controls="advanced-config-container">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Advanced Config</label>
+                    </div>
+                    <div class="container collapse" id="advanced-config-container">
+                        <div class="row mb-3">
+                            <h4>Advanced config</h4>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="us_id_input" class="form-label">Multiple User Stories</label>
+                            <button type="button" class="btn btn-info">Add Story <i class="bi-plus"></i></button>
+                        </div>
+                        <!-- <div class="row mb-3">
+                            <label for="us_points_select" class="form-label">Points</label>
+                            <div class="input-group">
+                                <select name="us_points_select" class="form-select" id="us_points_select" title="yomama">
+                                    <option value="00" selected>Select Option</option>
+                                    <option value="01">2pts</option>
+                                    <option value="02">3pts</option>
+                                    <option value="03">5pts</option>
+                                    <option value="04">8pts</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="us_startdate_input" class="form-label">Start Date</label>
+                            <div class="input-group">
+                                <input type="date" class="form-control" id="us_startdate_input">
+                            </div>
+                        </div> -->
+                    </div>
+                    <button type="submit" class="btn btn-success">Save Config</button>
+                    <button type="submit" class="btn btn-warning" disabled>Run</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/src/app.js" type="module"></script>
+</body>
+</html>

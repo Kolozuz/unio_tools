@@ -1,0 +1,12 @@
+{
+	"type": "module",
+	"dependencies": {
+		"bootstrap": "^5.3.2",
+		"bootstrap-icons": "^1.11.1",
+		"jquery": "^3.7.1",
+		"selenium-webdriver": "^4.14.0"
+	},
+	"scripts": {
+		"build:jquery": "cp node_modules/jquery/dist/jquery.min.js static/jquery/"
+	}
+}
