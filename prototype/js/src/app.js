@@ -9,7 +9,7 @@ class User{
     }
 }
 
-const user = new User("Kolozuz");
+const user = new User("Juanmoralesc");
 
 let welcome_msg = user.welcome()
 let welcome_msg_dom = $("#welcome_msg")
