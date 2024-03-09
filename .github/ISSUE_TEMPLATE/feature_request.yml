@@ -1,8 +1,8 @@
 name: "✨Feature request"
-description: Suggest an idea for this project
+description: Sugiere una idea para este proyecto
 title: "✨ [Feature]: "
 labels: ["enhancement"]
-projects: Lana-Software/3
+projects: Kolozuz/2
 assignees: 
   - Kolozuz
 
@@ -10,33 +10,33 @@ body:
   - type: markdown
     attributes:
       value: |
-         **Thanks for taking the time to submit your suggestion! :heart:**
-         >[!NOTE]
-         >Remember that you can use markdown formatting.
+         **Gracias por tomarte el tiempo de llenar este reporte! :heart:**
+         > [!NOTE]
+         > Recuerda que puedes usar Markdown.
   - type: checkboxes
     attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the feature you're proposing.
+      label: Ya existe un issue para esto?
+      description: Por favor busca si ya existe un issue para la feature que estas proponiendo.
       options:
-      - label: I've checked that this issue doesn't already exist.
+      - label: He revisado que este issue no existe aun.
         required: true
   - type: textarea
     id: desc
     attributes:
-      label: Description
-      description: Describe your idea/suggestion, how do you expect it to be? the more specific the better.
+      label: Descripción
+      description: Describe idea/sugerencia, como esperas que sea? entre más especifico mejor.
       placeholder: |
-        ex. I want to have ponies that fly across the page...
-        Because ponies are cool...
+        ej. Quiero que hayan ponis que vuelen por la pagina...
+        porque los ponis son cool...
     validations:
       required: true
   - type: textarea
     id: current
     attributes:
-      label: "Current Behaviour / Implementation"
+      label: "Comportamiento / Implementación actual"
       description: |
-          Does your idea or something similar already exists? Tell us why it should change or why it doesn't meet the requirements.
-          Type None if nothing like this exists
+          Existe ya tu idea o algo similar? Dinos porque deberia cambiar o porque no cumple con los requerimientos.
+          Escribe Ninguno si nada como esto existe.
       placeholder: |
           The current implementation sucks cause there aren't ponies, just rats! 
           and rats make me crazy...
@@ -45,7 +45,7 @@ body:
   - type: textarea
     id: notes
     attributes:
-      label: "Additional Context / Notes"
-      description: Information that may be useful for the implementation of this feature, add any other context or screenshots or little code snippets about the feature request here.
+      label: "Contexto adicional / Notas"
+      description: Información que podria ser de utilidad para la implementación de esta feature, añad eaqui cualquier otra información adicional, cosas como capturas de pantalla o bloques de codigo van aqui.
       placeholder: |
           > they locked me in a room, a rubber room..

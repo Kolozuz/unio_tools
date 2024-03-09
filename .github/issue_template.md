@@ -1,21 +1,21 @@
 ---
-name: Blank issue
-description: Default fully customizable issue template
-projects: "Lana-Software/3"
+name: Issue en blanco
+description: Plantilla por defecto 100% customizable para la redacción de issues
+projects: "Kolozuz/2"
 asignees: "Kolozuz"
 ---
 
-<!-- You don't need to delete the comments -->
-<!-- These comments are only visible when writing the issue -->
-# Description <!-- Details of the current situation and the expected outcome -->
+<!-- No necesitas eliminar los comentarios -->
+<!-- Estos comentarios solo son visibles al redactar el issue -->
+# Descripción <!-- Detalles de la situación actual y del resultado esperado -->
 
-## Acceptance Criteria <!-- Complete list of explicitly required items for the development to be accepted and implemented -->
+## Criterios de aceptación <!-- Lista compreta de los items explicitamente requeridos para que el desarrollo sea aceptado e implementado -->
 
 - [ ] 
 - [ ] 
 
-### Possible Solutions <!-- Suggestions can come from the developer who assigned the issue or the assigned developer -->
+### Posibles soluciones <!-- Sugerencias pueden venir del desarrollador que asigno el issue o del desarrollador asignado -->
 
-### Current <!-- If it exists. The solution implemented at the time of writing the issue, why it should change or why it does not meet the requirements -->
+### Actual <!-- Esto ya existe o algo similar? porque deberia cambiar o porque no cumple con los requerimientos? -->
 
-### Notes <!-- Information that is tangentially or indirectly related to the issue -->
+### Notas <!-- Información relacionada al issue -->
