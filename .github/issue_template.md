@@ -1,7 +1,7 @@
 ---
 name: Issue en blanco
 description: Plantilla por defecto 100% customizable para la redacción de issues
-projects: "Kolozuz/2"
+projects: "Kolozuz/3"
 asignees: "Kolozuz"
 ---
 

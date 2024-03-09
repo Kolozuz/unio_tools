@@ -2,7 +2,7 @@ name: "🐛 Bug Report"
 description: Reportar un bug
 title: "🐞 [Bug]: "
 labels: ["bug", "triage"]
-projects: Kolozuz/2
+projects: Kolozuz/3
 assignees:
   - Kolozuz
 body:
